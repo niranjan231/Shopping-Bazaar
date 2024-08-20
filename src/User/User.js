@@ -1,7 +1,7 @@
 
 
 
-
+import {useState} from "react";
 import "./User.css";
 // const data =  {
 //     id: 1,
@@ -16,13 +16,24 @@ import "./User.css";
 //     }
 //   }
 const User=(props)=>{
+  const  [counts,setCounts] = useState(0)
   const data = props.data;
+  const incresCounts=()=>{
+    setCounts(counts+1);
+  }
+  const decresCounts=()=>{
+    setCounts(counts-1);
+  }
     return (
         <div>
         <div className="user-1">
             <div><img src={data.image}></img></div>
         <div><h2>Price:{data.price}</h2></div>
-       
+       <div className="user-btn">
+        <div><button onClick={incresCounts}>+</button></div>
+         <div>{counts}</div>
+        <div><button onClick={decresCounts}>-</button></div>
+       </div>
         </div>
         </div>
     )

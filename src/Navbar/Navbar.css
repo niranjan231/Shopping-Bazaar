@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar-1{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(248, 242, 246, 0.58);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h3{
+    color:black;
+    font-weight: 800;
+    font-size: 25px;
+}
+img{
+    height: 40px;
+    width: 30px;
+    border: rgba(198, 191, 195, 0.922);
+margin-right: 30px;
+}
+.navbar-2{
+    display: flex;
+    position: relative;
+}
+.navbar-icon{
+    width: 15px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 40px;
+    margin-right:20px;
+    position: absolute;
+}
